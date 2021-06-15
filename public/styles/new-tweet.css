@@ -1,0 +1,36 @@
+.new-tweet {
+  display: flex;
+  flex-direction: column;
+  width: 100%
+}
+
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  border-top: solid #000;
+  border-top: 3px solid #494949;
+}
+
+textarea {
+  background: transparent;
+  color: black;
+  resize: none;
+  border: 0 none;
+  height: 30px;
+  width: 100%;
+  outline: none;
+
+}
+
+.counter {
+  font-family: Bungee, sans-serif;
+}
+
+button {
+  background-color: #4056a1;
+  color: #ffff;
+  font-family: Bungee, sans-serif;
+  border: none;
+}

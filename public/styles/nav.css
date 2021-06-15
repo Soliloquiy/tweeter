@@ -1,0 +1,31 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #4056A1;
+  height: 120px;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+span {
+  display: flex;
+  color:#ffffff;
+  font-family: 'Bungee', sans-serif;
+  padding-top: 1.0em;;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  flex-direction: column;
+}
+
+.logo span {
+  display: inline-block;
+  font-family: 'Source Sans Pro';
+}
+
+.fas {
+  color: red;
+  padding-left: 5em;
+}
