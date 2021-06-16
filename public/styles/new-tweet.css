@@ -13,7 +13,6 @@
   display: flex;
   justify-content: space-between;
   padding: 5px;
-  border-top: solid #000;
   border-top: 3px solid #494949;
 }
 

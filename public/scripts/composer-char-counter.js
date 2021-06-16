@@ -5,7 +5,7 @@ $(document).ready(function() {
     const counter = $(this).closest(".new-tweet").find(".counter")
     $(counter).val((140 - (this.value.length + 1)));
 
-    //add red to new-tweet
+    //add red to new-tweet with css
     if ($(this).val().length > 140) {
       counter.addClass("add-red-to-new-tweet");
     } else {

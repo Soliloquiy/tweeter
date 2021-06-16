@@ -8,9 +8,11 @@ nav {
   left: 0;
   right: 0;
   z-index: 1;
+  position: fixed;
+  top: 0;
 }
 
-span {
+nav span {
   display: flex;
   color:#ffffff;
   font-family: 'Bungee', sans-serif;
@@ -25,7 +27,7 @@ span {
   font-family: 'Source Sans Pro';
 }
 
-.fas {
+.logo i{
   color: red;
   padding-left: 5em;
 }

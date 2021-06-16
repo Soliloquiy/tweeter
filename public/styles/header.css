@@ -1,4 +1,4 @@
-header {
+.nav-header {
   display: flex;
   flex-direction: column;
   height: 400px;
@@ -7,4 +7,5 @@ header {
   align-items: center;
   background-color: rosybrown;
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+  margin-top: 115px;
 }
