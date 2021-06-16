@@ -63,7 +63,7 @@
 
         <div class="top">
         <h2>Compose Tweet</h2>
-        <form method="POST" action="/tweets">
+        <form class="tweet-form" method="POST" action="/tweets">
           <label for="tweet-text">What are you humming about?</label>
         </div>
           <textarea name="text" id="tweet-text"></textarea>
@@ -76,18 +76,19 @@
       </section>
 
       <section class="posted-tweet">
-        <article>
-
+        <article id="tweets-container">
           <header>
-            <div>
-              <p>Avatar</p>
-            </div>
-            <div>
-              <p>@example</p>
-            </div>
-          </header>
-
-          
+             <div class="avatar">
+                <img src=${tweetDataObj.user.avatars} alt="avatar">
+                <p>${tweetDataObj.user.name}</p>
+              </div>
+              <div>
+                <p>${tweetDataObj.user.handle}</p>
+              </div>
+            </header>
+        
+            <p class="content-text">${tweetDataObj.content.text}</p>
+        
           <footer>
             <div>
               <p>10 Days Ago</p>
@@ -98,7 +99,7 @@
               <span class="footer-arrows"><i class="fas fa-retweet"></i></span>
             </div>
           </footer>
-
+        
         </article>
       </section>
       
