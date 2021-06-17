@@ -3,7 +3,7 @@ $(document).ready(function() {
   // const counter = document.getElementById("counter");
   textArea.on("keypress", function(event) {
     const counter = $(this).closest(".new-tweet").find(".counter")
-    $(counter).val((140 - (this.value.length + 1)));
+    $(counter).val((140 - (this.value.length)));
 
     //add red to new-tweet with css
     if ($(this).val().length > 140) {
@@ -12,7 +12,5 @@ $(document).ready(function() {
       counter.removeClass("add-red-to-new-tweet")
     }
   })
-
-  // jQuery("time.timeago").timeago();
 
 });

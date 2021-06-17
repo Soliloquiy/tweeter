@@ -1,6 +1,6 @@
 .posted-tweet {
   display: flex;
-  height:8em;
+  height:9.5em;
   width: 100%;
   margin-top: 50px;
   border: 3px solid #494949;
@@ -16,7 +16,7 @@
 }
 
 article {
-  width: 100%
+  width: 100%;
 }
 
 .posted-tweet footer {
@@ -26,7 +26,6 @@ article {
   color: #4056A1;
   font-size: 60%;
   border-top: 3px solid #494949;
-  padding-top: 5px;
   align-items: center;
 }
 
@@ -40,10 +39,13 @@ article {
   padding-bottom: 10px;
 }
 
+
 .content-text {
   display: flex;
-  height: 5%;
-
+  height: 15%;
+  max-width: max-content;
+  word-break: break-word;
+  overflow: auto;
 }
 
 .footer-flag:hover {
@@ -60,4 +62,8 @@ article {
 
 .avatar {
   display: flex;
+}
+
+.for-prepending-tweets {
+  width: 100%;
 }
