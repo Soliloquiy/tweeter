@@ -83,6 +83,10 @@ $(document).ready(function() {
   $('.tweet-form').on('submit',function(event) {
     //prevent default post request
     event.preventDefault();
+    //remove add red class from counter
+    $('.counter').removeClass("add-red-to-new-tweet")
+    //clear text area
+    $('#tweet-text').val("");
     //reset counter to 140 upon submit request
     $('.counter').html(140);
     //hide if no errors
