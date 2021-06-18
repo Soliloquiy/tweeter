@@ -1,6 +1,6 @@
 # Tweeter Project
 
-Tweeter is a front-end featured web application built with Node and Express that allow users to view a database of messages. The user can input a message and instantly see it updated on their screen in a neat textbox with randomized names, handles, and avatars. User functionality includes: a fixed header when scrolling, responsive layout design for different devices and screen sizes, and error boxes for incorrect inputs, which are displayed in a smooth transition with the ultimate effect of the tweet being submitted. To put it briefly, Tweeter is a simple and efficient single-page Twitter clone.
+Tweeter is a front-end featured web application built with Node and Express that allow users to view an aesthetic interface for a database of messages. The user can input a message and instantly see it updated on their screen in a neat textbox with randomized names, handles, and avatars. User functionality includes: Fixed header when scrolling; Responsive layout design for different devices and screen sizes; Error boxes for incorrect inputs, which are displayed in a smooth transition with the ultimate effect of the tweet not being submitted. To put it briefly, Tweeter is a simple and efficient single-page Twitter clone.
 
 ## Getting Started
 
