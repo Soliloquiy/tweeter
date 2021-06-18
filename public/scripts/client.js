@@ -85,8 +85,6 @@ $(document).ready(function() {
     event.preventDefault();
     //remove add red class from counter
     $('.counter').removeClass("add-red-to-new-tweet")
-    //clear text area
-    $('#tweet-text').val("");
     //reset counter to 140 upon submit request
     $('.counter').html(140);
     //hide if no errors
@@ -100,10 +98,11 @@ $(document).ready(function() {
     if (content.length > 140) {
       errMessage = 'Your message is too long...';
     }
-    
     $('.new-tweet-error').text(errMessage);
     if (errMessage) {
       $('.new-tweet-error').slideDown();
+      //clear text area
+      $('#tweet-text').val("");
       return;
     }
     //convert form -> textArea to query string format (name=value)

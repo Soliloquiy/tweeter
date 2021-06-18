@@ -12,7 +12,7 @@ Tweeter is a front-end featured web application built with Node and Express that
 ## Final Product
 
 !["Screenshot of error handling"](https://github.com/Soliloquiy/tweeter/blob/master/docs/error-handling.png)
-!["Screenshot of error handling-2"](https://github.com/Soliloquiy/tweeter/blob/master/docs/error-handling-2.png)
+!["Screenshot of error handling-2"]()
 !["Screenshot of mobile view"](https://github.com/Soliloquiy/tweeter/blob/master/docs/mobile-view.png)
 !["Screenshot of mobile view-2"](https://github.com/Soliloquiy/tweeter/blob/master/docs/mobile-view-2.png)!["Screenshot of tablet-desktop-view"](https://github.com/Soliloquiy/tweeter/blob/master/docs/tablet-desktop-view.png)
 !["Screenshot of tablet-desktop-view-2"](https://github.com/Soliloquiy/tweeter/blob/master/docs/tablet-desktop-view-2.png)
