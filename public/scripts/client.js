@@ -37,6 +37,8 @@ const escape = function (str) {
 
 
 const createTweetElement = function(tweetDataObj) {
+  const time = tweetDataObj.created_at;
+  const timeAgo = timeago.format(time);
   const $tweet = $(`<section class="posted-tweet">
   <article id="tweets-container">
     <header>
@@ -53,7 +55,7 @@ const createTweetElement = function(tweetDataObj) {
   
     <footer>
       <div>
-        <p>10 Days Ago</p>
+        <p>${timeAgo}</p>
       </div>
       <div>
         <span class="footer-flag"><i class="fas fa-flag"></i></span>
@@ -77,18 +79,44 @@ const renderTweets = function(tweetsArr) {
   }
 
 }
+//function to GET array from "/tweets" and render them in HTML format
+const loadTweets = function () {
+  let url = "/tweets";
+
+  $.ajax({
+    method: "GET",
+    url: url,
+})
+.then (function(data) {
+  renderTweets(data)
+});
+}
 
 $(document).ready(function() {
+  loadTweets();
+  //hide error message
+  $('.new-tweet-error').hide();
   $('.tweet-form').on('submit',function(event){
     //prevent default post request
     event.preventDefault();
+    //hide if no errors
+    $('.new-tweet-error').slideUp("slow")
     //check input and give error if conditions not met
-    let content = $('#tweet-text').val();
-    if (content.length > 140) {
-      return alert("Your tweet is too long")
+    const content = $('#tweet-text').val();
+    console.log("Trigger", content)
+    let errMessage = "";
+    if (!content) {
+      errMessage = 'You need to write a message...'
     }
-    if (content === "" || content === null) {
-      return alert("You did not write anything")
+    if (content.length > 140) {
+      //change value inside error message
+      errMessage = 'Your message is too long...'
+    }
+    
+    $('.new-tweet-error').text(errMessage)
+    if (errMessage) {
+      $('.new-tweet-error').slideDown();
+      return
     }
     //convert form -> textArea to query string format (name=value)
     let serializedContent = $(this).serialize()
@@ -106,19 +134,6 @@ $(document).ready(function() {
       renderTweets(data)
     })
   })
-//function to GET array from "/tweets" and render them in HTML format
-  const loadTweets = function () {
-    let url = "/tweets";
-
-    $.ajax({
-      method: "GET",
-      url: url,
-  })
-  .then (function(data) {
-    renderTweets(data)
-  });
-  }
-
-  loadTweets();
-
+  
+  
 });

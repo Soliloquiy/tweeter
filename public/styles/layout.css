@@ -22,7 +22,7 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-main {
+main.container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -36,4 +36,70 @@ main {
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
+ Responsive Layout Below
  */
+
+ .main {
+  font-size: 30px;
+  text-align: center;
+}
+
+.section {
+  line-height: 10px;
+}
+
+.menu {
+  display: flex;
+  line-height: 20px;
+}
+
+
+
+.content {
+  height: 200px;
+  width: 100%;
+  padding-top: 2em;
+  line-height: 1em;
+}
+
+.feature {
+  line-height: 1em;
+}
+
+.footer {
+  color: #f0f0f0;
+  line-height: 100px;
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 768px) {
+  .main {
+    display: flex;
+    flex-direction: row;
+    padding-top: 100px ;
+  }
+
+  .feature {
+    display: flex;
+    width: 70%;
+    line-height: 30px;
+    font-size: 80%;
+  }
+
+  .content {
+    width: 66.7%;
+    float: right;
+    font-size: 80%;
+    padding-top: 4em;
+  }
+
+  .hero {
+    padding-left: 50px;
+    width: 60%
+  }
+
+  .container {
+    padding-top: 2em;
+  }
+
+}

@@ -1,4 +1,6 @@
 $(document).ready(function() {
+  //hide error message
+  $('.new-tweet-error').hide();
   const textArea = $("#tweet-text");
   // const counter = document.getElementById("counter");
   textArea.on("keypress", function(event) {
