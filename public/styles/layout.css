@@ -17,7 +17,7 @@ html {
 body {
   width: 100%;
   color: #545149;
-  background-color: #f4f1ec;
+  background-color: #a8dadc;
   font-size: 24px;
   font-family: 'Source Sans Pro', sans-serif;
 }
@@ -30,6 +30,7 @@ main.container {
   width: 80%;
   background-color: inherit;
   margin: 0 auto;
+  color: black;
 
 }
 
@@ -67,8 +68,9 @@ main.container {
 }
 
 .footer {
-  color: #f0f0f0;
+  color: #e9c46a;
   line-height: 100px;
+  width: 100%;
 }
 
 /* Tablet Styles */
@@ -83,7 +85,7 @@ main.container {
     display: flex;
     width: 70%;
     line-height: 30px;
-    font-size: 80%;
+    font-size: 70%;
   }
 
   .content {

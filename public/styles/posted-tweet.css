@@ -23,7 +23,7 @@ article {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  color: #4056A1;
+  color: black;
   font-size: 60%;
   border-top: 3px solid #494949;
   align-items: center;
@@ -54,15 +54,15 @@ article {
 }
 
 .footer-flag:hover {
-  color: red;
+  color: #e76f51;
 }
 
 .footer-heart:hover {
-  color: red;
+  color: #e76f51;
 }
 
 .footer-arrows:hover {
-  color: red;
+  color: #e76f51;
 }
 
 .avatar {

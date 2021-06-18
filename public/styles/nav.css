@@ -2,7 +2,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #4056A1;
+  background-color: #264653;
   top: 0;
   left: 0;
   right: 0;
@@ -12,7 +12,7 @@ nav {
 
 nav > span {
   display: flex;
-  color:#ffffff;
+  color:#f4a261;
   font-family: 'Bungee', sans-serif;
   padding-left: 1.0em;
   padding-right: 1.0em;
@@ -27,7 +27,7 @@ nav > span {
 }
 
 .logo i{
-  color: red;
+  color: #e76f51;
   font-size: 0.75em;
   padding-top: 0.5em;
   animation: bounce 0.5s;
